@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jenice.myplanapp">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 基础模块 END -->
+    <application
+        android:name=".leancloud.LeanCloudApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".fragment.MainActivity" />
+        <activity android:name=".mine.MineSetting" />
+        <activity android:name=".mine.MineSuggest" />
+        <activity android:name=".mine.MinePersonal" />
+        <activity android:name=".mine.MineAccount" />
+        <activity android:name=".mine.MineAboutUs" />
+        <activity android:name=".mine.MinePocket" />
+        <activity android:name=".mine.MineMessage" />
+        <activity android:name=".LRF.Register" />
+        <activity android:name=".LRF.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mine.MineCreateApply" />
+        <activity android:name=".mine.MineCreateApplyDetail" />
+        <activity android:name=".LRF.Forget" />
+        <activity android:name=".LRF.CheckPhone" />
+        <activity android:name=".home.PlanDetails" />
+        <activity android:name=".home.DayDuty" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".home.SignIn" />
+        <activity android:name=".mine.MinePlan" />
+        <activity android:name=".mine.MineCreate" />
+        <activity android:name=".mine.MineCreateApplyNext" />
+    </application>
+
+</manifest>

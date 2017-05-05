@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Planote</string>
+    <string name="mine_suggest_text_1">期待您留下建议，我们将进一步完善软件，为您带来更好的服务！</string>
+    <string name="mine_suggest_text_2">请您留下联系方式，完善软件后我们将第一时间通知您！</string>
+    <string name="mine_suggest_hint">邮箱、QQ、手机号码均可</string>
+    <string name="mine_message_content_1">欢迎使用XXXAPP！如果在使用过程中有任何意见或建议，可以发送反馈给我们，我们会尽最大的努力满足您的要求！</string>
+    <string name="mine_create_apply_explain">完善以下信息并提交给我们，我们会对计划进行审核。审核通过后，计划将在7天内发布！</string>
+</resources>

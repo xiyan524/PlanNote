@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plan_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jenice.myplanapp.home.PlanDetails"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/plan_item_layout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:id="@+id/plan_detail_box"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plan1"
+            android:scaleType="fitXY"
+            android:id="@+id/plan_detail_img"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吃到没朋友"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:layout_alignTop="@+id/plan_detail_img"
+            android:layout_alignRight="@+id/plan_detail_img"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/plan_detail_name"/>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_alignBottom="@+id/plan_detail_name"
+            android:layout_alignRight="@+id/plan_detail_img"
+            android:id="@+id/plan_detail_line"/>
+
+        <TextView
+            android:id="@+id/plan_detail_declaration"
+            android:text="每一个深夜霸占朋友圈"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_alignRight="@+id/plan_detail_img"
+            android:layout_alignTop="@+id/plan_detail_line"
+            android:layout_marginTop="5dp"/>
+
+        <com.example.jenice.myplanapp.AvatarImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/plan_detail_photo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#ff5e2b"
+            android:text="松果"
+            android:layout_above="@+id/plan_detail_person_decla"
+            android:layout_toRightOf="@+id/plan_detail_photo"
+            android:id="@+id/plan_detail_personname"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#999999"
+            android:text="生活是一个甜筒冰淇淋"
+            android:layout_alignBottom="@+id/plan_detail_box"
+            android:layout_toRightOf="@+id/plan_detail_photo"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/plan_detail_person_decla"
+            android:layout_marginLeft="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_collect_plan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/collect"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="Collection"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="任务列表"
+        android:textColor="#ff5e2b"
+        android:textAlignment="center"
+        android:background="#f2f2f2"
+        android:gravity="center"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/Plan_Detail_List">
+    </ListView>
+
+    <Button
+        android:id="@+id/Plan_detail_join"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="加入计划"
+        android:textColor="@color/white"
+        android:background="#ff5e2b"
+        android:layout_marginBottom="0dp"
+        android:textSize="20dp"
+        android:layout_weight="1"
+        android:onClick="joinPlan"
+        android:layout_marginEnd="3dp"/>
+
+</LinearLayout>

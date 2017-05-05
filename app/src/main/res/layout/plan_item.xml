@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@null"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:id="@+id/img_planitem__plan1"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/border"
+        android:id="@+id/img_planitem__border"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/item_plan_plan_name"
+            android:text="吃到没朋友"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="35dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/item_plan_plan_declaration"
+            android:text="每一个深夜霸占朋友圈"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

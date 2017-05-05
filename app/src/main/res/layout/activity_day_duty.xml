@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_day_duty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jenice.myplanapp.home.DayDuty">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/plan_item_layout">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plan1"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:id="@+id/day_duty_img"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAY1"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            android:layout_alignTop="@+id/day_duty_img"
+            android:layout_alignRight="@+id/day_duty_img"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/day_duty_daynum"/>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_alignBottom="@+id/day_duty_daynum"
+            android:layout_alignRight="@+id/day_duty_img"
+            android:id="@+id/day_duty_line1"/>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="任务:"
+            android:textColor="#ff5e2b"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="烘培一份手工饼干"
+            android:textColor="#999999"
+            android:textSize="17dp"
+            android:textAlignment="textEnd"
+            android:layout_marginRight="10dp"
+            android:id="@+id/day_duty_declaration2"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#999999"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="任务步骤:"
+        android:textSize="17dp"
+        android:textColor="#ff5e2b"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:text=""
+        android:id="@+id/day_duty_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#999999"/>
+
+    <TextView
+        android:id="@+id/day_duty_plan_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="朋友圈的深夜毒药"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:textColor="#999999"
+       />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="我要打卡"
+        android:textColor="@color/white"
+        android:background="#ff5e2b"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:layout_weight="1.1"
+        android:id="@+id/day_duty_btn"
+        android:onClick="sign_in"/>
+
+</LinearLayout>

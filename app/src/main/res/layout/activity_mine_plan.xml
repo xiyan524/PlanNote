@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jenice.myplanapp.mine.MinePlan">
+
+    <!--返回栏-->
+    <FrameLayout
+        android:id="@+id/fl_mine_plan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray">
+        <TextView
+            android:id="@+id/tv_mine_plan_topText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我参与的计划"
+            android:textSize="@dimen/title_size"
+            android:textColor="@color/orange"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <ListView
+        android:id="@+id/lv_mine_plan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>
